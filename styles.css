@@ -1,0 +1,352 @@
+/* CSS Reset Sheet */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Global variales */
+:root {
+
+  --clr-primary-400: hsl(300, 43%, 22%);
+  --clr-primary-200: hsl(333, 80%, 67%);
+
+  --clr-secondary-400: hsl(303, 10%, 53%);
+  --clr-secondary-200: hsl(300, 24%, 96%);
+  --clr-secondary-100: hsl(0, 0%, 100%);
+
+  --fs-base: 15px;
+
+  --fw-base: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --fm-base: 'League Spartan' , sans-serif;
+}
+
+/* custom css */
+body{
+   font-family: var(--fm-base);
+   font-size: var(--fs-base);
+   font-weight: var(--fw-base);
+   background-color: var(--clr-secondary-100);
+
+   height: auto;
+}
+.social__background-img{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: auto;
+}
+.social__background-img img{
+  width: 100%;
+  height: auto;
+
+  flex: 1;
+}
+article{
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1.5rem;
+
+  position: relative;
+  z-index: 1;
+}
+.social__card-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+}
+.social__card-intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+}
+.social__header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+}
+.social__header h1{
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-400);
+  
+  text-align: center;
+
+  padding: 0 2rem;
+  line-height: 0.8;
+}
+.social__header p{
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  color: var(--clr-secondary-400);
+  
+  text-align: center;
+
+  padding: 1rem;
+}
+.social__review-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  height: auto;
+  
+  margin: 1rem 0 2.5rem 0;
+}
+.social__review-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+  min-width: 350px;
+
+  background-color: var(--clr-secondary-200);
+  border-radius: 0.5rem;
+
+  padding: 0.75rem 0;
+  gap: 1rem;
+}
+.social__review-stars{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  width: 100%;
+  height: auto;
+}
+.social__review p{
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-400);
+  
+  text-align: center;
+}
+.social__card-reviews{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  height: auto;
+}
+.social__review1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+  min-width: 210px;
+
+  padding: 3rem 2rem;
+  background-color: var(--clr-primary-400);
+  border-radius: 0.5rem;
+  gap: 1rem;
+}
+.social__review1-bio{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+
+  width: 100%;
+  height: auto;
+  
+}
+.social__review1-bio img{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+
+  border-radius: 50%;
+}
+.social__review1-bio-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+
+  width: 100%;
+  height: auto;
+}
+.social__review1-bio-name h2{
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  color: var(--clr-secondary-200);
+}
+.social__review1-bio-name p{
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  color: var(--clr-primary-200);
+}
+.social__review1-text p{
+  width: 100%;
+  height: auto;
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  color: var(--clr-secondary-200);
+}
+
+@media (min-width: 601px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  article{
+    width: 80%;
+    padding: 10rem auto;
+  }
+  .social__background-img{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: auto;
+  }
+  .social__background-img img{
+    width: 100%;
+    height: auto;
+
+    flex: 1;
+  }
+  .social__card-main{
+    gap: 2rem;
+  }
+  .social__card-intro{
+    flex-direction: row;
+   
+  }
+  .social__header{
+    gap: 1rem;
+    padding: 0 0 0 0;
+  }
+  .social__header h1{
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 0 4em 0 0;
+  }
+  .social__header p{
+    font-size: var(--fs-base);
+    font-weight: var(--fw-medium);
+    color: var(--clr-secondary-400);
+    text-align: left;
+    padding: 0 4em 0 0;
+  } 
+  .social__review-box{
+    margin: 0;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 2.5rem 0;
+  }
+  .social__review-box .social__review-container:nth-of-type(1){
+    margin: 0;
+  }
+  .social__review-box .social__review-container:nth-of-type(2){
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3rem;
+    margin-right: -3rem;
+  }
+  .social__review-box .social__review-container:nth-of-type(3){
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 6rem;
+    margin-right: -6rem;
+  }
+  .social__review-container{
+    width: 100%;
+    flex-direction: row;
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+  .social__review-stars{
+    justify-content: left;
+    align-items: left;
+    width: auto;
+  }
+  .social__review p{
+    font-size: var(--fs-base);
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-400);
+  }
+  .social__card-reviews{
+    flex-direction: row;
+  }
+  .social__card-reviews .social__review1:nth-of-type(1){
+    margin: 0;
+  }
+  .social__card-reviews .social__review1:nth-of-type(2){
+    margin-top: 1.5rem;
+    margin-bottom: -1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .social__card-reviews .social__review1:nth-of-type(3){
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .social__review1{
+    padding: 2rem 2rem;
+    gap: 1.5rem;
+  }
+}
