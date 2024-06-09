@@ -45,8 +45,9 @@ body{
    font-size: var(--fs-base);
    font-weight: var(--fw-base);
    background-color: var(--clr-secondary-100);
-
-   height: auto;
+   width: auto;
+   height: 100vh;
+   overflow: hidden;
 }
 .social__background-img{
   display: flex;
@@ -58,6 +59,7 @@ body{
 
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 .social__background-img img{
   width: 100%;
@@ -244,6 +246,7 @@ article{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+  
   }
   article{
     width: 80%;
